@@ -9,10 +9,10 @@
 
       if (n < 0.05) {
         btn.textContent = "凶" ;//5%
-        advice.textContent = "凶はとってもレアなんです";
+        advice.textContent = "落ち込まないで。凶はとってもレアなんです";
       } else if (n < 0.35) { 
         btn.textContent = '末吉'; //30%
-        advice.textContent = "ちょっと嫌なことがあっても落ち込まないで";
+        advice.textContent = "ちょっと嫌なことがあっても大丈夫";
       } else if (n < 0.7) {
         btn.textContent = '吉'; //35%
         advice.textContent = 'いつも通りの日々が一番幸せ';
