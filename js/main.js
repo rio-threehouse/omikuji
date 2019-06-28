@@ -2,18 +2,23 @@
 
 {
   const btn = document.getElementById('btn');
+  const advice = document.getElementById('advice');
     btn.addEventListener('click', () => {
     // 確率を加える
     const n = Math.random();
 
-      if (n < 0.1) {
-        btn.textContent = "凶" ;//10%
-      } else if (n < 0.4) { 
+      if (n < 0.05) {
+        btn.textContent = "凶" ;//5%
+        advice.textContent = "凶はとってもレアなんです";
+      } else if (n < 0.35) { 
         btn.textContent = '末吉'; //30%
+        advice.textContent = "ちょっと嫌なことがあっても落ち込まないで";
       } else if (n < 0.7) {
-        btn.textContent = '吉'; //30%
+        btn.textContent = '吉'; //35%
+        advice.textContent = 'いつも通りの日々が一番幸せ';
       } else {
         btn.textContent = '大吉';  //30%
+        advice.textContent = '今日はいろんなことに挑戦してみよう！';
       }
 
     });
